@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Fields - Form</title>
+</head>
+<body>
+    <div id="secure-input-container"></div>
+    <script type="module">
+        import SecureInput from "./js/security-field.js";
+        const secureInput = new SecureInput('secure-input-container', {
+            placeholder: 'Digite seu dado seguro...',
+            color: '#000',
+            borderColor: '#ccc',
+            focusBorderColor: '#007bff',
+            onInput: (data) => {
+                console.log('Dado seguro digitado:', data);
+            },
+        });
+    </script>
+</body>
+</html>
