@@ -1,0 +1,35 @@
+{
+  "name": "security-fields",
+  "version": "1.0.0",
+  "description": "Create secure fields with JavaScript, CPI compliant",
+  "main": "sdk/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyber-Root0/security-fields.git"
+  },
+  "keywords": [
+    "PCI",
+    "security fields",
+    "security",
+    "IS",
+    "credit card",
+    "hosted",
+    "fields"
+  ],
+  "author": "Bruno Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyber-Root0/security-fields/issues"
+  },
+  "homepage": "https://github.com/Cyber-Root0/security-fields#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "rollup": "^4.28.1",
+    "vite": "^6.0.3"
+  }
+}
