@@ -2,7 +2,7 @@
   "name": "security-fields",
   "version": "1.0.0",
   "description": "Create secure fields with JavaScript, CPI compliant",
-  "main": "sdk/index.js",
+  "main": "SDK/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite"
@@ -31,5 +31,8 @@
     "@rollup/plugin-node-resolve": "^15.3.0",
     "rollup": "^4.28.1",
     "vite": "^6.0.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
   }
 }
