@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste do SDK</title>
+  <script defer src="./../dist/SecurityForm.js"></script>
+</head>
+<body>
+  <div id="app">
+    <input type="email" name="email" placeholder="Digite seu email seguro">
+    <input type="password" name="pwd" placeholder="Digite a sua senha">
+    <input type="submit">
+  </div>
+  <div id="container"></div>
+  <script type="module">
+    const formS = new SecurityForm("app", "container");
+    var uid = formS.config('/tests/auth.php', 'POST', {
+      "Bearer": 'SBISBUISGIUGSISSIU'
+    }).build();
+    
+    window.addEventListener(uid, (event) => {
+      console.log(event.detail);
+    }, false);
+  </script>
+</body>
+
+</html>

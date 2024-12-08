@@ -1,0 +1,18 @@
+<IfModule mod_headers.c>
+    # Permitir qualquer origem (apenas para desenvolvimento)
+    Header always set Access-Control-Allow-Origin "*"
+
+    # Permitir métodos específicos
+    Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+
+    # Permitir cabeçalhos personalizados
+    Header always set Access-Control-Allow-Headers "Content-Type, Authorization, Bearer"
+
+    # Permitir credenciais, se necessário (remova se não for usar cookies ou autenticação)
+    Header always set Access-Control-Allow-Credentials "true"
+
+    # Lidar com requisições preflight OPTIONS
+    RewriteEngine On
+    RewriteCond %{REQUEST_METHOD} OPTIONS
+    RewriteRule ^(.*)$ $1 [R=200,L]
+</IfModule>
